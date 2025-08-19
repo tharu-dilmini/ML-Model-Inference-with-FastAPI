@@ -1,11 +1,11 @@
 # ML-Model-Inference-with-FastAPI
-Iris Classification API
+✅Iris Classification API
 
-Problem Description
+✅Problem Description
 
 This project implements a FastAPI application for classifying Iris flower species (setosa, versicolor, virginica) based on four numerical features: sepal length, sepal width, petal length, and petal width. The model is trained on the Iris dataset provided in Iris.csv.
 
-Model Choice Justification
+✅Model Choice Justification
 
 A RandomForestClassifier was chosen due to its:
 
@@ -19,9 +19,9 @@ Provision of probability scores for predictions
 
 The model is trained with standardized features using StandardScaler to ensure consistent input preprocessing.
 
-API Usage Examples
+✅API Usage Examples
 
-Health Check
+1. Health Check
 
 GET http://localhost:8000/
 Response:
@@ -30,7 +30,7 @@ Response:
     "message": "Iris Classification API is running"
 }
 
-Prediction
+2. Prediction
 
 POST http://localhost:8000/predict
 Body:
@@ -46,19 +46,19 @@ Response:
     "confidence": 0.98
 }
 
-How to Run the Application
+✅How to Run the Application
 
-Clone the repository
+✅Clone the repository
 
-Install dependencies:
+✅Install dependencies:
 
 pip install -r requirements.txt
 
-Ensure model.pkl, scaler.pkl, and Iris.csv are in the project directory
+✅Ensure model.pkl, scaler.pkl, and Iris.csv are in the project directory
 
 Run the model training notebook (iris_classification_detailed.ipynb) to generate model.pkl and scaler.pkl if not already present
 
-Run the FastAPI application:
+✅Run the FastAPI application:
 
 uvicorn main:app --reload
 
@@ -81,7 +81,7 @@ The model is trained on a small dataset (150 samples), which may limit generaliz
 
 The API uses standardized features, requiring the scaler to be loaded
 
-Project Structure
+✅Project Structure
 
 iris_classification_detailed.ipynb: Notebook for data exploration, model training, and evaluation
 
