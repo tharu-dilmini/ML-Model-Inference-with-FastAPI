@@ -68,7 +68,7 @@ uvicorn main:app --reload
 
 Access the API documentation at http://localhost:8000/docs
 
-Assumptions and Limitations
+✅Assumptions and Limitations
 
 
 The model assumes input features are within the range of the training data
